@@ -24,6 +24,13 @@ import {UseReducer} from './Components/useReducer'
 // import {UserForm} from './Components/UserForm';
 
 
+import {UserContextProvider} from './context/UserContextProvider';
+import { UseContextProvider } from './Components/UserContextReducer';
+
+
+
+// import {UseContextHook} from './Components/useContextHook';
+
 function App() {
   
   
@@ -33,7 +40,17 @@ function App() {
        <Welcome name='Lucky'/>
        <Welcome name='Shammi'/>
 
+       <UserContextProvider>
+       {/* <UseReducer/> */}
+       <UseContextProvider/>
+       </UserContextProvider>
+       
+       {/* <UseContextHook/> */}
+
+       {/* <UserContextProvider>
+
        <UseReducer/>
+       </UserContextProvider> */}
        {/* <CustomHooks/>
        <UseRefExample/> */}
 
